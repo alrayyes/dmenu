@@ -1,9 +1,4 @@
-# Maintainer: Levente Polyak <anthraxx[at]archlinux[dot]org>
-# Contributor: Sergej Pupykin <pupykin.s+arch@gmail.com>
-# Contributor: Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
-# Contributor: Thorsten Töpper <atsutane-tu@freethoughts.de>
-# Contributor: Thayer Williams <thayer@archlinux.org>
-# Contributor: Jeff 'codemac' Mickey <jeff@archlinux.org>
+# Maintainer: Ryan Kes <alrayyes@gmail.com>
 
 pkgname=dmenu
 pkgver=4.9
