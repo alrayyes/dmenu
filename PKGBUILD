@@ -7,7 +7,7 @@ pkgdesc='Generic menu for X'
 url='https://tools.suckless.org/dmenu/'
 arch=('x86_64')
 license=('MIT')
-depends=('sh' 'libxinerama' 'libxft' 'freetype2' 'menu-calc' 'pass' 'nerd-fonts-source-code-pro')
+depends=('sh' 'libxinerama' 'libxft' 'freetype2' 'menu-calc' 'pass'  'yubikey-oath-dmenu' 'nerd-fonts-source-code-pro')
 
 sha512sums=('c2779209fe012de8ca1cdd72923da6d594f4a8368c85c3c0e0afd4ae489a95fe0e6f05a947d115b6b389aa7170ab14c2c645a2031353b0a08f38327ab461fe65'
             'a253aff0ec1eb9f2201f7ea624b408e74590bdede9b9eab8240eab80c63dd5be49dcb00629b65704eb185907b90231ea7e6f88a25326ffc8f520fe42b0d8b11a')
