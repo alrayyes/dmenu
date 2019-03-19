@@ -1,6 +1,6 @@
 # My Dmenu Build
 
-[Slstatus](https://tools.suckless.org/dmenu) [Arch](https://www.archlinux.org/) package with a few patches installed to keep things nice.
+[Dmenu](https://tools.suckless.org/dmenu) [Arch](https://www.archlinux.org/) package with a few patches installed to keep things nice.
 
 ```
 makepkg -si
