@@ -1,0 +1,32 @@
+diff -up a/config.def.h b/config.def.h
+--- a/config.def.h	2020-11-28 10:43:05.242935618 +0100
++++ b/config.def.h	2020-11-28 10:44:59.249845805 +0100
+@@ -15,6 +15,7 @@ static const char *colors[SchemeLast][2]
+ 	[SchemeSelHighlight] = { "#ffc978", "#005577" },
+ 	[SchemeNormHighlight] = { "#ffc978", "#222222" },
+ 	[SchemeOut] = { "#000000", "#00ffff" },
++	[SchemeMid] = { "#eeeeee", "#770000" },
+ };
+ /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
+ static unsigned int lines      = 0;
+diff -up a/dmenu.c b/dmenu.c
+--- a/dmenu.c	2020-11-28 10:43:05.242935618 +0100
++++ b/dmenu.c	2020-11-28 10:45:57.066625600 +0100
+@@ -28,7 +28,7 @@
+
+ /* enums */
+ enum { SchemeNorm, SchemeSel, SchemeNormHighlight, SchemeSelHighlight,
+-       SchemeOut, SchemeLast }; /* color schemes */
++       SchemeOut, SchemeMid, SchemeLast }; /* color schemes */
+
+
+ struct item {
+@@ -162,6 +162,8 @@ drawitem(struct item *item, int x, int y
+ 	int r;
+ 	if (item == sel)
+ 		drw_setscheme(drw, scheme[SchemeSel]);
++	else if (item->left == sel || item->right == sel)
++		drw_setscheme(drw, scheme[SchemeMid]);
+ 	else if (item->out)
+ 		drw_setscheme(drw, scheme[SchemeOut]);
+ 	else
