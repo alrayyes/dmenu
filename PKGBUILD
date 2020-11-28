@@ -7,10 +7,10 @@ pkgdesc='Generic menu for X'
 url='https://tools.suckless.org/dmenu/'
 arch=('x86_64')
 license=('MIT')
-depends=('sh' 'libxinerama' 'libxft' 'freetype2' 'menu-calc' 'pass'  'yubikey-oath-dmenu' 'otf-nerd-fonts-fira-code')
+depends=('sh' 'glibc' 'coreutils' 'libx11' 'libxinerama' 'freetype2' 'fontconfig' 'libfontconfig.so' 'menu-calc' 'pass' 'yubikey-oath-dmenu')
 
 sha512sums=('2b6a7cdf5aefc5e7ca7a4944883c3c16ee6f5005d2a96b61482d4899ad395f9cb8926907681d88b9df3e1188cf421dad4cc17e343b752f6cb8b161d33384b3f3'
-            '2597b08c19aa0c0dede048b2ce27b2d0c1f11ffcaefa431aca256d7a8821b453d383e88ef34ca10cebb7b5d8118953b38e2dfb2ced417d1a394fe8df67779d0c'
+            '254cd0c4e82149700004897ca5ef6be63b02d791ce327c2a4f68d6ee6599645e5b469771514e80e188c4e531caa3e4349ecb035b2fdc10b687a380b7d6b36632'
             'ad8183cca1ad1dd5b786896f94d127eeea53cece291c485f928388a7589402f49ed7e0ee8bdae71cc2ed41f3276b96591349cd820621f345376a54d557307fdf'
             'beed0f7725d84b4d73cb35fb7d78d7db90c7fa15ed0ac4d6cf19e6469caf83167bc3edae246c30a2f0a79e765b46d9a37997a9a72f5dec147cc0a904fa2ef790'
             'ce806c6481b20d5b2352fc387816878c75285162f6404b3a969a95f9dbd6c7476fd4c6571f260886fa30ccc40e4a388ea8f6902e40ff90447e04bec3faf0669d'
@@ -30,7 +30,6 @@ _patches=(
 
 source=(https://dl.suckless.org/tools/dmenu-${pkgver}.tar.gz
     config.h
-    dmenu-frequency
     "${_patches[@]}")
 
 prepare() {
@@ -59,10 +58,6 @@ package() {
   cd ${pkgname}-${pkgver}
   make PREFIX=/usr DESTDIR="${pkgdir}" install
   install -Dm 644 LICENSE -t "${pkgdir}/usr/share/licenses/${pkgname}"
-
-  cd ../
-  install -Dm0755 dmenu-frequency "${pkgdir}/usr/bin/dmenu-frequency"
 }
 
 # vim: ts=2 sw=2 et:
-
