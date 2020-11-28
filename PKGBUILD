@@ -1,7 +1,7 @@
 # Maintainer: Ryan Kes <alrayyes@gmail.com>
 
 pkgname=dmenu
-pkgver=4.9
+pkgver=5.0
 pkgrel=1
 pkgdesc='Generic menu for X'
 url='https://tools.suckless.org/dmenu/'
@@ -9,7 +9,7 @@ arch=('x86_64')
 license=('MIT')
 depends=('sh' 'libxinerama' 'libxft' 'freetype2' 'menu-calc' 'pass'  'yubikey-oath-dmenu' 'otf-nerd-fonts-fira-code')
 
-sha512sums=('c2779209fe012de8ca1cdd72923da6d594f4a8368c85c3c0e0afd4ae489a95fe0e6f05a947d115b6b389aa7170ab14c2c645a2031353b0a08f38327ab461fe65'
+sha512sums=('2b6a7cdf5aefc5e7ca7a4944883c3c16ee6f5005d2a96b61482d4899ad395f9cb8926907681d88b9df3e1188cf421dad4cc17e343b752f6cb8b161d33384b3f3'
             'e2aefad0eb1d7abd31ed359d62687096b1657bb47bae963ff7626c7b0f5da40ce3dccc154234f9f785e02d518fde9dc4843f8a02030a393c5e0188066ff459e5'
             'ad8183cca1ad1dd5b786896f94d127eeea53cece291c485f928388a7589402f49ed7e0ee8bdae71cc2ed41f3276b96591349cd820621f345376a54d557307fdf')
 
