@@ -2,7 +2,7 @@
 
 pkgname=dmenu
 pkgver=5.0
-pkgrel=1
+pkgrel=0
 pkgdesc='Generic menu for X'
 url='https://tools.suckless.org/dmenu/'
 arch=('x86_64')
