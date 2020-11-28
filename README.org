@@ -8,14 +8,14 @@
 - [[https://tools.suckless.org/dmenu/patches/morecolor/][morecolor]]
 - [[https://tools.suckless.org/dmenu/patches/mouse-support/][mousesupport]]
 - [[https://tools.suckless.org/dmenu/patches/numbers/][numbers]]
+- My own custom patch to enable colours (and thus emojis)
 
 * Install
 #+begin_src shell
 makepkg -si
 #+end_src
 
-- Default font is
-  [[https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/FiraCode][Fira Code Nerd Font Mono]]
+- Default font is monospace
 - When modifying [[https://github.com/alrayyes/dwm/blob/master/config.h][config.h]] be sure to run =updpkgsums= to update checksums before
   running =makepkg -si=
 
