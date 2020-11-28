@@ -15,7 +15,7 @@
 makepkg -si
 #+end_src
 
-- Default font is monospace
+- Default font is [[https://sourcefoundry.org/hack][Hack]]
 - When modifying [[https://github.com/alrayyes/dwm/blob/master/config.h][config.h]] be sure to run =updpkgsums= to update checksums before
   running =makepkg -si=
 
