@@ -7,8 +7,8 @@ static int fuzzy = 1; /* -F  option; if 0, dmenu doesn't use fuzzy matching */
 
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
-    "Hack Nerd Font Mono:size=16:antialias=true:autohint=true",
-    "JoyPixels:pixelsize=16:antialias=true:autohint=true"
+    "Hack Nerd Font Mono:size=12:antialias=true:autohint=true",
+    "JoyPixels:pixelsize=12:antialias=true:autohint=true"
 };
 
 static const char *prompt =
@@ -20,7 +20,6 @@ static const char *colors[SchemeLast][2] = {
     [SchemeSelHighlight] = {"#ffc978", "#005577"},
     [SchemeNormHighlight] = {"#ffc978", "#222222"},
     [SchemeOut] = {"#000000", "#00ffff"},
-    [SchemeMid] = {"#eeeeee", "#770000"},
 };
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
 static unsigned int lines = 0;

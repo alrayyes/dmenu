@@ -5,7 +5,6 @@
 - [[https://tools.suckless.org/dmenu/patches/center/][center]]
 - [[https://tools.suckless.org/dmenu/patches/fuzzyhighlight/][fuzzyhighlight]]
 - [[https://tools.suckless.org/dmenu/patches/fuzzymatch/][fuzzymatch]]
-- [[https://tools.suckless.org/dmenu/patches/morecolor/][morecolor]]
 - [[https://tools.suckless.org/dmenu/patches/mouse-support/][mousesupport]]
 - [[https://tools.suckless.org/dmenu/patches/numbers/][numbers]]
 - My own custom patch to enable colours (and thus emojis)
